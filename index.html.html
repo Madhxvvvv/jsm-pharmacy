@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>D.Pharm Admissions | JSM College of Pharmacy, Meerut</title>
+<meta name="description" content="Two-year Diploma in Pharmacy (D.Pharm) at JSM College of Pharmacy, Mawana Road, Salarpur, Meerut. Six hands-on labs, PCI-regulated syllabus and a route to registration as a pharmacist.">
+<meta name="theme-color" content="#0b7f86">
+<meta property="og:type" content="website">
+<meta property="og:title" content="D.Pharm at JSM College of Pharmacy, Meerut">
+<meta property="og:description" content="Learn pharmacy at the bench, not just in the book. Two-year Diploma in Pharmacy with six hands-on labs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b7f86'/%3E%3Cpath d='M26 14h12M29 14v14L18 46a4 4 0 0 0 3.5 6h21a4 4 0 0 0 3.5-6L35 28V14' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: lab-bench page. Wide hero with a pH strip as the signature motif, then bench-like grids of labs and a ranked table of colleges. */
+:root{
+  --bg:#f5f7f8; --surface:#ffffff; --fg:#10202b; --muted:#53636e; --line:#d6dee3; --line-soft:#e6ecef;
+  --accent:#0b7f86; --accent-deep:#086168; --accent-ink:#ffffff; --accent-soft:#dcf1f2; --flag:#b4540a; --flag-soft:#fbe9d8;
+  --shadow:0 1px 2px rgba(16,32,43,.05),0 10px 28px -14px rgba(16,32,43,.18);
+  --shadow-lift:0 2px 4px rgba(16,32,43,.06),0 18px 40px -16px rgba(16,32,43,.26);
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c1a22; --surface:#13252f; --fg:#e8f0f3; --muted:#9db0ba; --line:#243a46; --line-soft:#1c303b;
+  --accent:#4fd0d6; --accent-deep:#38b6bc; --accent-ink:#06242a; --accent-soft:#12383e; --flag:#f0a15e; --flag-soft:#3a2a18;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -14px rgba(0,0,0,.6);
+  --shadow-lift:0 2px 4px rgba(0,0,0,.35),0 18px 40px -16px rgba(0,0,0,.7); color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0c1a22; --surface:#13252f; --fg:#e8f0f3; --muted:#9db0ba; --line:#243a46; --line-soft:#1c303b;
+  --accent:#4fd0d6; --accent-deep:#38b6bc; --accent-ink:#06242a; --accent-soft:#12383e; --flag:#f0a15e; --flag-soft:#3a2a18;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -14px rgba(0,0,0,.6);
+  --shadow-lift:0 2px 4px rgba(0,0,0,.35),0 18px 40px -16px rgba(0,0,0,.7); color-scheme:dark;}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+img{max-width:100%}
+::selection{background:var(--accent);color:var(--accent-ink)}
+.wrap{max-width:1120px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800}
+h3{font-size:1.2rem;font-weight:700;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.kicker{display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-weight:500}
+.kicker::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+.kicker i{font-style:normal;color:var(--muted)}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;margin-inline:calc(-1 * max(18px,env(safe-area-inset-left,0px)));
+  padding-inline:max(18px,env(safe-area-inset-left,0px));padding-top:env(safe-area-inset-top,0px);
+  background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);
+  border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;gap:10px 28px;align-items:center;justify-content:space-between;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:1.08rem;text-decoration:none;color:var(--fg);letter-spacing:-.01em;line-height:1.1;flex-shrink:0}
+.brand .mark{width:34px;height:34px;border-radius:9px;background:var(--accent);display:grid;place-items:center;flex-shrink:0}
+.brand .mark svg{width:20px;height:20px;stroke:var(--accent-ink);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.brand small{display:block;font-family:var(--mono);font-weight:400;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+nav{display:flex;gap:2px;align-items:center;overflow-x:auto;scrollbar-width:none;min-width:0}
+nav::-webkit-scrollbar{display:none}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.93rem;padding:6px 10px;border-radius:6px;white-space:nowrap}
+nav a:hover{color:var(--fg);background:var(--line-soft)}
+nav a.nav-cta{background:var(--accent);color:var(--accent-ink);margin-left:8px;font-weight:600}
+nav a.nav-cta:hover{background:var(--accent-deep);color:var(--accent-ink)}
+@media (max-width:760px){
+  header.top .wrap{flex-direction:column;align-items:stretch;gap:8px;padding-block:10px 6px}
+  nav{margin-inline:-10px;padding-bottom:4px;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+  nav a.nav-cta{display:none}
+}
+
+section{padding-block:clamp(56px,8vw,96px);scroll-margin-top:84px}
+#equipment{scroll-margin-top:100px}
+.head{display:grid;gap:14px;margin-bottom:36px;max-width:720px}
+.head p{color:var(--muted);font-size:1.05rem}
+
+/* hero */
+.hero{padding-block:clamp(44px,7vw,84px) clamp(32px,5vw,56px)}
+.hero h1{font-size:clamp(2.6rem,7.5vw,5.4rem);font-weight:800;max-width:14ch;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--accent);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:2%;right:2%;bottom:.04em;height:.12em;background:var(--accent);opacity:.22;border-radius:4px}
+.hero .lede{font-size:1.2rem;color:var(--muted);max-width:54ch;margin-top:22px}
+.hero .lede strong{color:var(--fg);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent);line-height:1.2}
+.btn.primary{background:var(--accent);color:var(--accent-ink);box-shadow:0 8px 20px -10px var(--accent)}
+.btn.primary:hover{background:var(--accent-deep);border-color:var(--accent-deep)}
+.btn.ghost{color:var(--accent);background:transparent}
+.btn.ghost:hover{background:var(--accent-soft)}
+.trust{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:30px;padding:0;list-style:none}
+.trust li{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.93rem}
+.trust li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+
+.ph{margin-top:56px}
+.ph-bar{position:relative;height:18px;border-radius:4px;background:linear-gradient(90deg,#d7263d 0%,#f46036 18%,#f2b134 36%,#8cc63f 50%,#1b998b 62%,#2e86c1 78%,#6c4ab6 100%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.ph-ticks{position:relative;height:84px}
+.ph-tick{position:absolute;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px;width:110px;text-align:center}
+.ph-tick::before{content:"";width:2px;height:16px;background:var(--fg)}
+.ph-tick b{font-family:var(--mono);font-weight:500;font-size:.85rem}
+.ph-tick span{font-size:.8rem;color:var(--muted);line-height:1.25}
+.ph-tick.edge-l{transform:translateX(-12%);align-items:flex-start;text-align:left}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px}
+
+/* hero scene */
+.herogrid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:center}
+.scene{background:radial-gradient(120% 90% at 30% 10%,var(--surface) 0%,var(--accent-soft) 62%);border:1px solid var(--line);border-radius:18px;padding:14px;min-width:0;box-shadow:var(--shadow)}
+.scene svg{width:100%;height:auto;display:block}
+.s-line{stroke:var(--fg);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.s-glass{fill:var(--surface)}
+.s-a{fill:var(--accent)} .s-b{fill:#f2b134} .s-c{fill:#d7263d} .s-d{fill:#6c4ab6}
+.s-bench{fill:var(--fg)}
+@media (max-width:860px){.herogrid{grid-template-columns:1fr}}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-deep) 100%);color:var(--accent-ink);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+.fact{padding:30px 26px;border-right:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22);margin:0 -1px -1px 0}
+.fact b{display:block;font-family:var(--display);font-size:2.8rem;font-weight:800;line-height:1;margin-bottom:10px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.fact span{font-size:.95rem;opacity:.9}
+
+/* equipment */
+.equip{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.eq{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0;display:grid;gap:8px;align-content:start}
+.eq .pic{background:var(--accent-soft);border-radius:9px;display:flex;justify-content:center;padding:14px 0}
+.eq svg{width:120px;height:120px}
+.eq svg .l{stroke:var(--fg);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.eq svg .f{fill:var(--surface);stroke:var(--fg);stroke-width:2.6;stroke-linejoin:round}
+.eq svg .a{fill:var(--accent);stroke:var(--fg);stroke-width:2.6;stroke-linejoin:round}
+.eq svg .o{fill:#f2b134;stroke:var(--fg);stroke-width:2.6;stroke-linejoin:round}
+.eq svg .r{fill:#d7263d;stroke:var(--fg);stroke-width:2.6;stroke-linejoin:round}
+.eq b{font-family:var(--display);font-size:1.05rem;margin-top:4px}
+.eq p{color:var(--muted);font-size:.92rem;line-height:1.45}
+.eq .mono{font-size:.66rem;padding-top:8px;border-top:1px dashed var(--line);margin-top:2px}
+.darkband{background:var(--fg);color:var(--bg);border-radius:20px;padding:clamp(28px,5vw,60px);margin-block:16px;scroll-margin-top:100px;position:relative;overflow:hidden}
+.darkband::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 100% 0%,color-mix(in srgb,var(--accent) 28%,transparent),transparent 70%);pointer-events:none}
+.darkband > *{position:relative}
+.darkband .head p{color:var(--bg);opacity:.78}
+.darkband .head .kicker{color:var(--accent)}
+.darkband .eq{border-color:transparent}
+.darkband .eq b{color:var(--fg)}
+
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;min-width:0;box-shadow:var(--shadow)}
+.panel h3{margin-bottom:16px;display:flex;align-items:baseline;gap:10px}
+.panel h3 .mono{font-size:.7rem;color:var(--accent)}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.panel li{display:flex;justify-content:space-between;gap:14px;border-bottom:1px dashed var(--line);padding-bottom:10px}
+.panel li:last-child{border:0;padding:0}
+.panel li small{font-family:var(--mono);font-size:.74rem;color:var(--muted);white-space:nowrap;align-self:center}
+.note{margin-top:18px;color:var(--muted);font-size:.92rem;max-width:80ch}
+.note.callout{border-left:3px solid var(--accent);padding:12px 16px;background:var(--surface);border-radius:0 8px 8px 0}
+
+/* labs */
+.labs{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}
+.lab{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0;min-width:0;display:flex;flex-direction:column;box-shadow:var(--shadow);overflow:hidden}
+.lab .art{height:116px;border-bottom:1px solid var(--line);background:radial-gradient(80% 120% at 50% 0%,var(--surface) 0%,var(--accent-soft) 70%);display:flex;align-items:center;justify-content:center;position:relative}
+.lab .art .num{position:absolute;top:12px;left:16px;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--accent)}
+.lab .art svg{height:76px;width:auto;stroke:var(--accent);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.lab .body{padding:22px 24px 26px;display:grid;gap:10px}
+.lab p{color:var(--muted);font-size:.97rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.tags span{font-family:var(--mono);font-size:.7rem;border:1px solid var(--line);border-radius:4px;padding:3px 8px;color:var(--muted);background:var(--bg)}
+
+/* path */
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.types div{border-left:3px solid var(--accent);padding:6px 0 6px 18px}
+.types b{font-family:var(--display);font-size:1.05rem}
+.types p{color:var(--muted);font-size:.95rem;margin-top:2px}
+.path{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.step{flex:1 1 180px;background:var(--surface);border:1px solid var(--line);padding:22px;margin:0 -1px -1px 0;min-width:0}
+.step.now{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-deep) 100%);color:var(--accent-ink);border-color:var(--accent)}
+.step.now .mono{color:var(--accent-ink);opacity:.8}
+.step b{font-family:var(--display);font-size:1.15rem;display:block;margin:6px 0 4px}
+.step small{color:var(--muted);font-size:.9rem;line-height:1.4;display:block}
+.step.now small{color:var(--accent-ink);opacity:.92}
+
+/* table */
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:600px}
+th,td{text-align:left;padding:14px 20px;border-bottom:1px solid var(--line-soft)}
+thead th{font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg);border-bottom:1px solid var(--line)}
+tbody tr{transition:background .15s}
+tbody tr:hover{background:var(--accent-soft)}
+tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono)}
+td.rank{font-family:var(--display);font-weight:800;font-size:1.25rem;width:72px;color:var(--accent)}
+td.inst{font-weight:600}
+td.city{color:var(--muted)}
+
+/* contact */
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.contact .cbar{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-deep) 100%);color:var(--accent-ink);padding:26px 28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px}
+.contact .cbar h3{font-size:1.45rem}
+.contact .cbar p{opacity:.9;margin-top:4px}
+.contact .cbar .btn{background:var(--accent-ink);color:var(--accent-deep);border-color:var(--accent-ink)}
+.cgrid{display:grid;grid-template-columns:1fr}
+@media (min-width:700px){.cgrid{grid-template-columns:1fr 1fr}}
+.citem{display:flex;gap:14px;align-items:flex-start;padding:24px 28px;text-decoration:none;color:var(--fg);border-right:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);margin:0 -1px -1px 0;min-width:0;transition:background .15s}
+a.citem:hover{background:var(--accent-soft)}
+.citem .ic{width:40px;height:40px;border-radius:10px;background:var(--accent-soft);display:grid;place-items:center;flex-shrink:0}
+.citem .ic svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.citem .mono{display:block;margin-bottom:3px;font-size:.68rem}
+.citem strong{display:block;font-weight:600;font-size:1.02rem;overflow-wrap:break-word;line-height:1.35}
+.citem em{display:block;font-style:normal;color:var(--accent);font-size:.88rem;margin-top:4px;font-weight:500}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:44px 56px;color:var(--muted);font-size:.9rem}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px 40px}
+footer .brand{margin-bottom:12px}
+footer h4{font-family:var(--mono);font-weight:500;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);margin:0 0 10px}
+footer ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+footer a{color:var(--muted)}
+footer a:hover{color:var(--accent)}
+.legal{margin-top:32px;padding-top:20px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:.84rem}
+
+/* mobile action bar */
+.mbar{display:none}
+@media (max-width:640px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;
+    padding:10px max(14px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px));
+    background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+  .mbar a{justify-content:center;padding:12px 10px}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+}
+
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  .btn{transition:transform .15s,background .15s,box-shadow .15s}.btn:hover{transform:translateY(-2px)}
+  .lab,.eq,.panel{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+  .lab:hover,.panel:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+  .eq:hover{transform:translateY(-3px)}
+}
+@media (max-width:560px){.ph-tick{width:84px}.ph-tick span{font-size:.72rem}.ph-tick.hide-s{display:none}.fact{padding:20px}.fact b{font-size:2.3rem}.citem,.contact .cbar{padding-inline:20px}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></svg></span><span>JSM College of Pharmacy<small>D.Pharm · Meerut</small></span></a>
+  <nav aria-label="Sections">
+    <a href="#course">Course</a><a href="#labs">Labs</a><a href="#equipment">Equipment</a><a href="#path">Careers</a><a href="#colleges">Colleges in India</a><a href="#apply">Admissions</a><a class="nav-cta" href="#apply">Enquire now</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="wrap">
+
+<section class="hero">
+  <div class="herogrid">
+  <div>
+  <p class="mono kicker">Diploma in Pharmacy <i>· Admissions open</i></p>
+  <h1 style="margin-top:16px">Learn pharmacy at the <em>bench</em>, not just in the book.</h1>
+  <p class="lede">A two-year Diploma in Pharmacy at <strong>JSM College of Pharmacy, Meerut</strong> that takes you from the mortar and pestle to the dispensing counter, with six hands-on labs and a route to registration as a pharmacist.</p>
+  <div class="cta"><a class="btn primary" href="#apply">Enquire about admission</a><a class="btn ghost" href="#labs">Tour the labs</a></div>
+  <ul class="trust">
+    <li>PCI Education Regulations 2020 syllabus</li>
+    <li>2 years + 500 hrs practical training</li>
+    <li>Mawana Road, Salarpur, Meerut</li>
+  </ul>
+  </div>
+  <div class="scene" role="img" aria-label="Illustration of a laboratory bench with a microscope, flasks, test tubes and a mortar and pestle">
+    <svg viewBox="0 0 420 360" aria-hidden="true">
+      <rect x="0" y="290" width="420" height="70" class="s-bench"/>
+      <rect x="20" y="40" width="130" height="90" rx="6" class="s-glass s-line"/>
+      <path d="M32 70h106M32 96h70" class="s-line"/><circle cx="118" cy="98" r="6" class="s-a"/>
+      <!-- microscope -->
+      <path d="M52 290h80" class="s-line" style="stroke-width:6"/>
+      <path d="M92 290v-24c34 0 50-30 40-62-6-20-20-30-34-34" class="s-line" style="stroke-width:6"/>
+      <rect x="62" y="150" width="26" height="62" rx="5" transform="rotate(-22 75 181)" class="s-a s-line"/>
+      <path d="M62 250h60" class="s-line" style="stroke-width:6"/>
+      <!-- conical flask -->
+      <path d="M232 180h30M239 180v50l-40 56a10 10 0 0 0 9 14h86a10 10 0 0 0 9-14l-40-56v-50" class="s-glass s-line"/>
+      <path d="M208 262h74l16 24a10 10 0 0 1-9 14h-88a10 10 0 0 1-9-14z" class="s-b" opacity=".85"/>
+      <!-- test tubes -->
+      <g class="s-line"><path d="M322 170v100a14 14 0 0 0 28 0V170" class="s-glass"/><path d="M356 190v80a14 14 0 0 0 28 0v-80" class="s-glass"/></g>
+      <path d="M323 230v40a13 13 0 0 0 26 0v-40z" class="s-c"/><path d="M357 236v34a13 13 0 0 0 26 0v-34z" class="s-d"/>
+      <path d="M314 290h78" class="s-line" style="stroke-width:5"/>
+      <!-- mortar and pestle -->
+      <path d="M150 318h60c0 18-12 28-30 28s-30-10-30-28z" class="s-glass s-line" transform="translate(0,-20)"/>
+      <path d="M190 292l26-46" class="s-line" style="stroke-width:8"/>
+    </svg>
+  </div>
+  </div>
+
+  <div class="ph" role="img" aria-label="pH scale from 0 to 14 with gastric acid near 1.5, skin near 5.5, blood at 7.4 and milk of magnesia near 10.5">
+    <div class="ph-bar"></div>
+    <div class="ph-ticks">
+      <div class="ph-tick edge-l" style="left:10.7%"><b>pH 1.5</b><span>Gastric acid</span></div>
+      <div class="ph-tick hide-s" style="left:39.3%"><b>pH 5.5</b><span>Skin surface</span></div>
+      <div class="ph-tick" style="left:52.9%"><b>pH 7.4</b><span>Human blood</span></div>
+      <div class="ph-tick" style="left:75%"><b>pH 10.5</b><span>Milk of magnesia</span></div>
+    </div>
+    <div class="ph-scale mono"><span>0 acidic</span><span>7 neutral</span><span>14 alkaline</span></div>
+  </div>
+</section>
+
+<section id="course">
+  <div class="head"><p class="mono kicker">01 <i>· The course</i></p><h2>Two years of study, then supervised practice</h2>
+  <p>The D.Pharm at JSM College of Pharmacy follows the Pharmacy Council of India's Education Regulations 2020. After the two academic years, students complete practical training before they are eligible to register as a pharmacist.</p></div>
+
+  <div class="facts">
+    <div class="fact"><b>2 yrs</b><span>Part I and Part II, one academic year each</span></div>
+    <div class="fact"><b>500 hrs</b><span>Practical training after the two years</span></div>
+    <div class="fact"><b>10+2</b><span>Science stream entry, as set by PCI</span></div>
+    <div class="fact"><b>60</b><span>Current PCI cap on D.Pharm intake per institution</span></div>
+  </div>
+
+  <div class="two" style="margin-top:20px">
+    <div class="panel"><h3><span class="mono">Part I</span>Year one</h3>
+      <ul><li>Pharmaceutics <small>theory + lab</small></li><li>Pharmaceutical Chemistry <small>theory + lab</small></li><li>Pharmacognosy <small>theory + lab</small></li><li>Human Anatomy &amp; Physiology <small>theory + lab</small></li><li>Social Pharmacy <small>theory + lab</small></li></ul></div>
+    <div class="panel"><h3><span class="mono">Part II</span>Year two</h3>
+      <ul><li>Pharmacology <small>theory + lab</small></li><li>Community Pharmacy &amp; Management <small>theory + lab</small></li><li>Biochemistry &amp; Clinical Pathology <small>theory + lab</small></li><li>Pharmacotherapeutics <small>theory</small></li><li>Hospital &amp; Clinical Pharmacy <small>theory</small></li><li>Pharmacy Law &amp; Ethics <small>theory</small></li></ul></div>
+  </div>
+  <p class="note callout">Students also sit the Diploma in Pharmacy Exit Examination introduced by PCI from the 2022-23 batch. Check the current PCI regulations for the latest rules on eligibility, intake and examinations.</p>
+  <!-- TODO: add PCI approval letter reference and the affiliated examining authority (e.g. BTEUP) once the client provides them. -->
+</section>
+
+<section id="labs">
+  <div class="head"><p class="mono kicker">02 <i>· Labs and practice rooms</i></p><h2>Six places where the theory gets used</h2>
+  <p>Every theory subject in the D.Pharm has a practical component. This is what each room is for and what students do in it.</p></div>
+
+  <div class="labs">
+    <article class="lab"><div class="art"><span class="num">LAB 01</span><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M30 12h20M34 12v22L18 62a6 6 0 0 0 5 9h34a6 6 0 0 0 5-9L46 34V12"/><path d="M26 54h28"/></svg></div>
+      <div class="body"><h3>Pharmaceutics Lab</h3><p>Compounding and dosage forms. Students prepare and label what a pharmacist makes up from a prescription.</p>
+      <div class="tags"><span>syrups</span><span>suspensions</span><span>emulsions</span><span>ointments</span><span>powders</span></div></div></article>
+
+    <article class="lab"><div class="art"><span class="num">LAB 02</span><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M26 8h28M32 8v18M48 8v18M26 26h28M40 26v40"/><path d="M28 66h24M22 74h36"/></svg></div>
+      <div class="body"><h3>Pharmaceutical Chemistry Lab</h3><p>Titration, limit tests for impurities and assay of common drugs, done on a burette stand with measured reagents.</p>
+      <div class="tags"><span>volumetric analysis</span><span>limit tests</span><span>assay</span></div></div></article>
+
+    <article class="lab"><div class="art"><span class="num">LAB 03</span><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M40 68V34"/><path d="M40 44c-14 0-22-8-22-20 14 0 22 8 22 20z"/><path d="M40 52c12 0 20-7 20-18-12 0-20 7-20 18z"/></svg></div>
+      <div class="body"><h3>Pharmacognosy Lab</h3><p>Drugs from plants. Students identify crude drugs by appearance, microscopy and simple chemical tests.</p>
+      <div class="tags"><span>crude drug identification</span><span>microscopy</span><span>powder analysis</span></div></div></article>
+
+    <article class="lab"><div class="art"><span class="num">LAB 04</span><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M40 68s-24-14-24-32a13 13 0 0 1 24-6 13 13 0 0 1 24 6c0 18-24 32-24 32z"/><path d="M18 40h12l5-9 7 16 5-7h15"/></svg></div>
+      <div class="body"><h3>Human Anatomy &amp; Physiology Lab</h3><p>Models, charts and prepared slides for the body systems, plus measurements students take on each other.</p>
+      <div class="tags"><span>anatomical models</span><span>histology slides</span><span>pulse &amp; BP</span><span>blood grouping</span></div></div></article>
+
+    <article class="lab"><div class="art"><span class="num">LAB 05</span><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M40 10c10 16 18 26 18 38a18 18 0 0 1-36 0c0-12 8-22 18-38z"/><path d="M30 50a10 10 0 0 0 8 9"/></svg></div>
+      <div class="body"><h3>Biochemistry &amp; Clinical Pathology Lab</h3><p>Routine urine and blood tests of the kind run in a clinical lab, with attention to what each result means.</p>
+      <div class="tags"><span>urine analysis</span><span>blood glucose</span><span>haemoglobin</span></div></div></article>
+
+    <article class="lab"><div class="art"><span class="num">LAB 06</span><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M14 30h52v36H14zM10 30l6-14h48l6 14"/><path d="M34 66V48h12v18"/><path d="M20 38h8M52 38h8"/></svg></div>
+      <div class="body"><h3>Model Pharmacy</h3><p>A mock community pharmacy for practising prescription reading, dispensing, labelling, patient counselling and record keeping.</p>
+      <div class="tags"><span>dispensing</span><span>counselling</span><span>records</span><span>Schedule H drugs</span></div></div></article>
+  </div>
+  <!-- TODO: replace the line icons with real lab photographs when the client sends them. -->
+</section>
+
+<div class="darkband" id="equipment">
+  <div class="head"><p class="mono kicker">03 <i style="color:inherit;opacity:.75">· On the bench</i></p><h2>The equipment you will learn to use</h2>
+  <p>Eight instruments every D.Pharm student learns to handle, from the first practical class to the model pharmacy.</p></div>
+  <div class="equip">
+    <div class="eq"><div class="pic"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="l" d="M28 108h64"/><path class="l" d="M52 108V96c30 0 44-26 34-52-4-10-12-16-20-18"/><rect class="a" x="38" y="30" width="16" height="42" rx="4" transform="rotate(-22 46 51)"/><path class="l" d="M36 84h40"/><path class="l" d="M30 46l8 4"/></svg></div><b>Compound microscope</b><p>Crude drug powders and tissue slides.</p><span class="mono">Pharmacognosy · Anatomy</span></div>
+
+    <div class="eq"><div class="pic"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="l" d="M30 112V8M14 112h46"/><path class="l" d="M30 34h30"/><rect class="f" x="56" y="14" width="10" height="62" rx="3"/><path class="o" d="M56 44h10v32H56z"/><path class="l" d="M61 76v8"/><path class="f" d="M50 108l9-20h4l9 20z"/></svg></div><b>Burette and stand</b><p>Titration to find the strength of a drug.</p><span class="mono">Pharmaceutical Chemistry</span></div>
+
+    <div class="eq"><div class="pic"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="f" d="M22 62h76c0 26-16 42-38 42S22 88 22 62z"/><path class="l" d="M18 62h84"/><path class="l" d="M68 56l26-38"/><circle class="a" cx="97" cy="14" r="7"/></svg></div><b>Mortar and pestle</b><p>Grinding powders for mixtures and capsules.</p><span class="mono">Pharmaceutics</span></div>
+
+    <div class="eq"><div class="pic"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="f" d="M48 10h24M54 10v34L28 98a8 8 0 0 0 7 12h50a8 8 0 0 0 7-12L66 44V10"/><path class="o" d="M36 84h48l8 14a8 8 0 0 1-7 12H35a8 8 0 0 1-7-12z" transform="translate(0,-4)"/></svg></div><b>Conical flask</b><p>Mixing and holding solutions during assay.</p><span class="mono">Chemistry · Pharmaceutics</span></div>
+
+    <div class="eq"><div class="pic"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="f" d="M24 20v62a8 8 0 0 0 16 0V20z"/><path class="r" d="M24 56v26a8 8 0 0 0 16 0V56z"/><path class="f" d="M52 20v62a8 8 0 0 0 16 0V20z"/><path class="a" d="M52 46v36a8 8 0 0 0 16 0V46z"/><path class="f" d="M80 20v62a8 8 0 0 0 16 0V20z"/><path class="o" d="M80 64v18a8 8 0 0 0 16 0V64z"/><path class="l" d="M14 92h92M18 92v18M102 92v18"/></svg></div><b>Test tubes and rack</b><p>Chemical tests and clinical pathology samples.</p><span class="mono">Biochemistry · Pathology</span></div>
+
+    <div class="eq"><div class="pic"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="l" d="M24 50h72"/><path class="l" d="M60 50v14"/><rect class="f" x="22" y="64" width="76" height="42" rx="8"/><rect class="a" x="38" y="72" width="44" height="14" rx="3"/><circle class="o" cx="60" cy="97" r="4"/></svg></div><b>Digital balance</b><p>Weighing drugs to the milligram before compounding.</p><span class="mono">Pharmaceutics</span></div>
+
+    <div class="eq"><div class="pic"><svg viewBox="0 0 120 120" aria-hidden="true"><rect class="a" x="10" y="64" width="40" height="26" rx="5"/><path class="l" d="M50 77c16 0 20-12 22-22"/><circle class="f" cx="86" cy="40" r="22"/><path class="r" d="M86 40l10-10"/><path class="l" d="M70 40h4M98 40h4M86 22v4"/><ellipse class="o" cx="30" cy="106" rx="9" ry="8"/><path class="l" d="M30 90v8"/></svg></div><b>BP apparatus</b><p>Measuring blood pressure and pulse on each other.</p><span class="mono">Anatomy &amp; Physiology</span></div>
+
+    <div class="eq"><div class="pic"><svg viewBox="0 0 120 120" aria-hidden="true"><g transform="rotate(-35 36 40)"><rect class="r" x="8" y="28" width="30" height="24" rx="12"/><path class="f" d="M30 28h28a12 12 0 0 1 0 24H30z"/></g><circle class="f" cx="82" cy="84" r="22"/><path class="l" d="M64 84h36"/><rect class="o" x="12" y="82" width="44" height="26" rx="4"/><circle class="f" cx="26" cy="95" r="6"/><circle class="f" cx="42" cy="95" r="6"/></svg></div><b>Dosage forms</b><p>Capsules, tablets and blister packs students prepare and dispense.</p><span class="mono">Model pharmacy</span></div>
+  </div>
+</div>
+
+<section id="path">
+  <div class="head"><p class="mono kicker">04 <i>· After the diploma</i></p><h2>Work now, or keep studying</h2>
+  <p>A D.Pharm from a PCI-approved institution, plus the required practical training, qualifies a student to register as a pharmacist with a State Pharmacy Council. Graduates work in:</p></div>
+  <div class="types">
+    <div><b>Community pharmacy</b><p>Dispensing and counselling at retail chemists.</p></div>
+    <div><b>Hospital pharmacy</b><p>Stores, dispensing and ward supply.</p></div>
+    <div><b>Manufacturing</b><p>Production, packing and quality checks.</p></div>
+    <div><b>Distribution &amp; sales</b><p>Wholesale, stockists and medical representation.</p></div>
+  </div>
+
+  <h3 style="margin:52px 0 18px">Pharmacy education ladder in India</h3>
+  <div class="path">
+    <div class="step now"><span class="mono">Start here</span><b>D.Pharm</b><small>2 years after 10+2</small></div>
+    <div class="step"><span class="mono">Degree</span><b>B.Pharm</b><small>4 years; D.Pharm holders can enter on the lateral route</small></div>
+    <div class="step"><span class="mono">Practice</span><b>B.Pharm (Practice)</b><small>2 years after D.Pharm</small></div>
+    <div class="step"><span class="mono">Postgraduate</span><b>M.Pharm</b><small>2 years after B.Pharm</small></div>
+    <div class="step"><span class="mono">Clinical</span><b>Pharm.D</b><small>6 years incl. internship; D.Pharm holders can join Pharm.D (Post Baccalaureate)</small></div>
+  </div>
+</section>
+
+<section id="colleges">
+  <div class="head"><p class="mono kicker">05 <i>· Pharmacy colleges across India</i></p><h2>Where the profession is taught at the highest level</h2>
+  <p>India has several thousand PCI-approved pharmacy institutions, roughly 1,745 degree colleges and 2,875 diploma colleges by one 2025 count. The government's NIRF ranks the best degree-level institutions every year. Here is the top ten of the 2025 pharmacy list.</p></div>
+
+  <div class="tablebox"><table>
+    <thead><tr><th>Rank</th><th>Institution</th><th>City, state</th><th class="n">NIRF score</th></tr></thead>
+    <tbody>
+      <tr><td class="rank">1</td><td class="inst">Jamia Hamdard</td><td class="city">New Delhi</td><td class="n">86.59</td></tr>
+      <tr><td class="rank">2</td><td class="inst">Birla Institute of Technology &amp; Science (BITS) Pilani</td><td class="city">Pilani, Rajasthan</td><td class="n">82.28</td></tr>
+      <tr><td class="rank">3</td><td class="inst">Panjab University</td><td class="city">Chandigarh</td><td class="n">76.39</td></tr>
+      <tr><td class="rank">4</td><td class="inst">JSS College of Pharmacy</td><td class="city">Ooty, Tamil Nadu</td><td class="n">76.14</td></tr>
+      <tr><td class="rank">5</td><td class="inst">National Institute of Pharmaceutical Education and Research (NIPER)</td><td class="city">Hyderabad, Telangana</td><td class="n">75.64</td></tr>
+      <tr><td class="rank">6</td><td class="inst">Institute of Chemical Technology</td><td class="city">Mumbai, Maharashtra</td><td class="n">74.77</td></tr>
+      <tr><td class="rank">7</td><td class="inst">JSS College of Pharmacy</td><td class="city">Mysuru, Karnataka</td><td class="n">73.38</td></tr>
+      <tr><td class="rank">8</td><td class="inst">Manipal College of Pharmaceutical Sciences</td><td class="city">Manipal, Karnataka</td><td class="n">73.25</td></tr>
+      <tr><td class="rank">9</td><td class="inst">National Institute of Pharmaceutical Education and Research (NIPER)</td><td class="city">Mohali, Punjab</td><td class="n">70.96</td></tr>
+      <tr><td class="rank">10</td><td class="inst">SRM Institute of Science and Technology</td><td class="city">Chennai, Tamil Nadu</td><td class="n">70.84</td></tr>
+    </tbody></table></div>
+  <p class="note">NIRF 2025, released by the Ministry of Education on 4 September 2025. NIRF ranks degree and research institutions, not diploma colleges, so use it as a guide to the wider pharmacy world.</p>
+
+  <div class="types">
+    <div><b>Universities</b><p>Central, state and deemed universities with B.Pharm to Ph.D programmes.</p></div>
+    <div><b>NIPERs</b><p>National institutes for pharmaceutical education and research, at Mohali, Ahmedabad, Hyderabad and other centres.</p></div>
+    <div><b>Private pharmacy colleges</b><p>Standalone colleges offering D.Pharm and B.Pharm under a university or board.</p></div>
+    <div><b>Diploma institutions</b><p>Approved by PCI under section 12 of the Pharmacy Act, 1948 to run D.Pharm.</p></div>
+  </div>
+  <p class="note">Before joining any pharmacy college, check that it appears in the PCI approved-institutions list at <a href="https://pci.nic.in" target="_blank" rel="noopener">pci.nic.in</a>.</p>
+</section>
+
+<section id="apply">
+  <div class="head"><p class="mono kicker">06 <i>· Admissions</i></p><h2>Talk to the admissions office</h2>
+  <p>Fees, seat availability, last dates and documents depend on the session and your examining authority. Call, WhatsApp or email the admissions office for the current details.</p></div>
+  <div class="contact">
+    <div class="cbar">
+      <div><h3>JSM College of Pharmacy</h3><p>Mawana Road, Salarpur, Meerut, Uttar Pradesh</p></div>
+      <a class="btn" href="https://wa.me/919997010605?text=Hello%2C%20I%27d%20like%20to%20know%20about%20D.Pharm%20admission%20at%20JSM%20College%20of%20Pharmacy." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+    </div>
+    <div class="cgrid">
+      <a class="citem" href="tel:+919997010605"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg></span><span><span class="mono">Phone</span><strong>+91 99970 10605</strong><em>Tap to call</em></span></a>
+      <a class="citem" href="https://wa.me/919997010605" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg></span><span><span class="mono">WhatsApp</span><strong>+91 99970 10605</strong><em>Message the office</em></span></a>
+      <a class="citem" href="mailto:jsmaadmin1@gmail.com?subject=D.Pharm%20admission%20enquiry"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><span class="mono">Email</span><strong>jsmaadmin1@gmail.com</strong><em>Write to admissions</em></span></a>
+      <a class="citem" href="https://www.google.com/maps/search/?api=1&amp;query=JSM%20College%20of%20Pharmacy%2C%20Mawana%20Road%2C%20Salarpur%2C%20Meerut" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><span><span class="mono">Campus</span><strong>Mawana Road, Salarpur, Meerut</strong><em>Get directions</em></span></a>
+    </div>
+  </div>
+</section>
+</div>
+</main>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div>
+      <a class="brand" href="#top"><span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></svg></span><span>JSM College of Pharmacy<small>D.Pharm · Meerut</small></span></a>
+      <p>Mawana Road, Salarpur, Meerut, Uttar Pradesh<br><a href="tel:+919997010605">+91 99970 10605</a> · <a href="mailto:jsmaadmin1@gmail.com">jsmaadmin1@gmail.com</a></p>
+    </div>
+    <div>
+      <h4>On this page</h4>
+      <ul><li><a href="#course">The course</a></li><li><a href="#labs">Labs</a></li><li><a href="#path">Careers</a></li><li><a href="#apply">Admissions</a></li></ul>
+    </div>
+    <div>
+      <h4>Sources</h4>
+      <ul>
+        <li><a href="https://pci.nic.in/FaQs.html" target="_blank" rel="noopener">Pharmacy Council of India, FAQs</a></li>
+        <li><a href="https://www.nirfindia.org/" target="_blank" rel="noopener">NIRF India Rankings 2025</a></li>
+        <li><a href="https://eduvouchers.com/blogs/students-diary/top-pharmacy-colleges-in-india" target="_blank" rel="noopener">Eduvouchers, count of approved institutions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <span>© 2026 JSM College of Pharmacy. A JSM Academy institution · <a href="https://jsmacademy.in/" target="_blank" rel="noopener">jsmacademy.in</a></span>
+    <span>Course details summarise PCI regulations. Confirm with PCI and your examining authority.</span>
+  </div>
+</div></footer>
+
+<div class="mbar" aria-label="Quick contact">
+  <a class="btn ghost" href="tel:+919997010605">Call</a>
+  <a class="btn primary" href="https://wa.me/919997010605?text=Hello%2C%20I%27d%20like%20to%20know%20about%20D.Pharm%20admission%20at%20JSM%20College%20of%20Pharmacy." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+</body>
+</html>
